@@ -136,9 +136,10 @@ const miModulo = (() => {
     }); 
 
     btnDetener.addEventListener('click', () => {
+        
         btnPedir.disabled = true;
         btnDetener.disabled = true;
-        turnoComputadora( puntosJugador );
+        turnoComputadora( puntosJugadores[0] );
     });
 
     return {
